@@ -1,0 +1,218 @@
+* {
+    font-family: 'Roboto' , sans-serif;
+}
+header {
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    height: 50px;
+    padding: 13px 0;
+    background: #212121;
+}
+
+.menu {
+    display:flex;
+    justify-content: space-between;
+    list-style-type: none;  
+    margin: 0;  
+}
+
+.menu .menu_item {
+    border-right: 2px dotted black;
+    padding-right: 50px;
+}
+ 
+.menu .menu_link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.menu .menu_link:hover {
+    background:#fff;
+    color:black;
+    padding: 5px;
+    transition: .6s all;
+}
+
+.subheader {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    background: rgba(0, 0, 0, .6);
+    height: 87px;
+    padding: 19px 0;
+}
+
+.subheader .subheader_official {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 13px;
+    color: #FFFFFF;
+    margin-top: 9.5px;
+}
+
+.subheader .subheader_call {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.subheader .subheader_num {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: block;
+}
+
+.subheader .subheader_btn {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 46px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);    
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+.uber_promo {
+    padding: 152px 0 185px 0;
+    min-height: 800px;
+    background-image: url(../img/bg/uber_bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.uber_title_big {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 67px;
+}
+
+.uber_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.uber_promo_text {
+    width: 985px;
+    margin: 0 auto;
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.uber_promo_btn {
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    display: block;
+    margin: 0 auto;
+    margin-top: 116px;
+    width: 211px;
+    height: 63px;
+}
+
+.with_us {
+    min-height: 849px;
+    padding: 27px 0 64px 0;
+}
+
+.with_us .with_us_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.with_us .with_us_circle {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 113px;
+    height: 113px;
+    background: #1EACC7;
+    border-radius: 50%;
+}
+
+.with_us .with_us_text {
+    width: 343px;
+    margin-left: 26px;
+}
+
+.with_us .with_us_text p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    color: #202020;
+}
+
+.with_us .with_us_text .with_us_link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #1EACC7;
+    text-decoration: none;
+}
+
+.label {
+    width: 115px;
+    background: #000000;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 auto;
+}
+
+.title {
+    margin-top: 32px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+}

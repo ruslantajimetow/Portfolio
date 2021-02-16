@@ -1,0 +1,100 @@
+.experience {
+    padding-top: 138px;
+    &__title {
+        text-align: center;
+        position: relative;
+        @include before_circle;
+        &:before {
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    .divider {
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    &__wrapper{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2,425px);
+        column-gap: 136px;
+        justify-content: center;
+        &-title {
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -49px;
+                width: 15px;
+                height: 15px;
+                background-color: $main-color;
+                border-radius: 100%;
+            }
+        }
+        &-item {
+            padding-left: 43px;
+            position: relative;
+            &::after {
+                content: '';
+                width: 1px;
+                height: calc(100% - 21px);
+                background: #000;
+                position: absolute;
+                top: 21px;
+                left: 0px;
+            }
+        }
+        &-head {
+            margin-top: 45px;
+            display: grid;
+            grid-template-columns: 45px 328px;
+            column-gap: 20px
+        }
+        &-icon {
+            position: relative;
+            @include before_circle;
+            &:before {
+                top: -1px;
+            }
+            img {
+                position: absolute;
+                top: 14px;
+                left: 17px;
+            }
+            &::after {
+                content: '';
+                width: 42px;
+                height: 1px;
+                background: #000;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -42px;
+            }
+        }
+        // &-descr {
+        //     width: 370px;
+        // }
+        &-location {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+        }
+        &-body {
+            // width: 370px;
+            margin-top: 12px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: #000000;
+        }
+    }
+}

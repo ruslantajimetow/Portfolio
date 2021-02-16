@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+@import 'base/variables';
+@import 'base/mixins';
+
+
+*   {
+    font-family: "Poppins" , sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+    margin-top: 25px;
+    &_mt4 {
+        margin-top: 4px;
+    }
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,  0.7);
+    z-index: 11;
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        svg {
+            path {
+                fill: white;
+            }
+        }
+    }
+    &_active {
+        display: block;
+    }
+    &__modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 450px;
+        height: 140px;
+        background: rgba(255, 255, 255,  0.9);
+        padding: 28px;
+        &-subtitle {
+            font-style: normal;
+            font-weight: bold;
+            color: $main-color;
+            font-size: 32px;
+            line-height: 42px;
+        }
+        &-descr {
+            font-size: 14px;
+            line-height: 21px;
+            color: $main-color;
+        }
+    }
+}
+
+@import 'blogs/promo';
+@import 'blogs/title';
+@import 'blogs/buttons';
+@import 'blogs/sidepanel';
+@import 'blogs/menu';
+@import 'blogs/about-me';
+@import 'blogs/experience';
+@import 'blogs/skill';
+@import 'blogs/skill-rate';
+@import 'blogs/portfolio';
+@import 'blogs/price';
+@import 'blogs/contact';
+@import 'blogs/media';
+ 
+
